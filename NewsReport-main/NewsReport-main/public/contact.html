@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <title>Contact Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: white;
+
+        }
+
+        .navbardesgin {
+            margin: 50px;
+            /* padding-top: 50px; */
+            text-align: center;
+            justify-content: center;
+            height: 6vh;
+        }
+
+        nav ul {
+            float: right;
+            margin-right: 40px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 8px;
+            line-height: 80px;
+        }
+        nav a:hover{
+            color: blue;
+        }
+        nav a {
+            color: black;
+            font-size: 21px;
+            text-transform: uppercase;
+            border: 1px solid transparent;
+            padding: 7px 10px;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+
+        a .active,
+        a:hover {
+            border: 1px solid white;
+            transition: .5s;
+        }
+
+        .heading img {
+            position: sticky;
+        }
+
+        .responsive {
+            height: 7vh;
+            width: 19vw;
+            margin-top: 16px;
+            margin-left: 13px;
+        }
+
+        #title {
+            font-size: 80px;
+            margin-left: 55px;
+            margin-top: 55px;
+        }
+
+        .mainbox {
+            display: flex;
+            justify-content: space-evenly;
+            /* align-content: center; */
+            flex-wrap: wrap;
+            flex-direction: row;
+            height: 61vh;
+            width: 100vw;
+        }
+        .subbox1 img {
+            width: 40vw;
+        }
+
+        .subbox2 {
+            display: flex;
+            padding-top: 20px;
+            height: 61vh;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-left: 40px;
+        }
+
+        .subbox2 form input {
+            margin: 13px 0px;
+        }
+        #UserName {
+            border-radius: 9px;
+            height: 30px;
+            width: 300px;
+        }
+
+        #UserQuestion {
+            border-radius: 9px;
+            height: 63px;
+            width: 300px;
+        }
+
+        #Query {
+            height: 3rem;
+            width: 9rem;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+        }
+        #Query:hover{
+            cursor: pointer;
+            background-color: rgb(170, 139, 242);
+        }
+
+        .contactme {
+            height: 12vh;
+            /* background-color: rgb(219, 201, 255); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .contactme a {
+            margin: 0 60px;
+            cursor: pointer;
+        }
+        .headline {
+            display: flex;
+            justify-content: center;
+            width: 100vw;
+            height: 15vh;
+            align-items: center;
+        }
+        .headline p{
+            font-size: 30px;
+        }
+        .gmail a:hover {
+            border: none;
+            color: rgb(201, 44, 25);
+        }
+
+        .twitter a:hover {
+            border: none;
+            color: #1DA1F2;
+        }
+
+        .github a:hover {
+            border: none;
+            color: black;
+        }
+
+        .instagram a:hover {
+            border: none;
+            color: #E1306C;
+        }
+
+        .linkedin a:hover {
+            border: none;
+            color: rgb(0, 97, 146);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="heading">
+        <img src="Daily_Bugle.png" alt="Company Name" class="responsive">
+        <ul class="">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+    <div class="headline">
+        <p>HAVE SOME QUESTIONS ?</p>
+    </div>
+    <div class="mainbox">
+        <div class="subbox2">
+
+            <form action="mailto:prakash0singh0basnal@gmail.com" method="post" enctype="text/plain">
+                <!-- <label>Your First Name :</label> -->
+                <input type="text" name="First_Name" value="" placeholder=" First Name" id="UserName"><br>
+                <!-- <label>Your Last Name :</label> -->
+                <input type="text" name="Last_Name" value="" placeholder=" Last Name" id="UserName"><br>
+                <input type="email" name="E-mail" value="" placeholder="Your Email" id="UserName"><br>
+                <!-- <label>Your Message :</label><br> -->
+                <input type="text" name="YourMessage" placeholder="Your Question ?" id="UserQuestion">
+                <br>
+                <input type="submit" name="Send Query" id="Query">
+            </form>
+        </div>
+        <div class="subbox1">
+            <img src="contact.png" alt="">
+        </div>
+    </div>
+    <footer>
+
+        <div class="contactme" id="contactme">
+            <div class="gmail">
+                <!-- <a href="https://www.bing.com/?FORM=Z9FD1" target="_blank">
+                    <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                </a> -->
+            </div>
+            <div class="github">
+                <a href="https://github.com/Prakash0Singh" target="_blank">
+                    <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="instagram">
+                <a href="https://instagram.com/prakash_singh_basnal?utm_medium=copy_link" target="_blank">
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/prakash-singh-basnal-630a2b217/" target="_blank">
+                    <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="twitter">
+                <a href="https://twitter.com/PrakashBasnal?t=_7R_Fw3jHC-u4bty-RaB9g&s=09" target="_blank">
+                    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

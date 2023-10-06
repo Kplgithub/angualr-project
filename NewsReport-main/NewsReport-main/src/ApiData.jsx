@@ -1,0 +1,31 @@
+import React, { useEffect, useState } from 'react'
+const ApiData = () => {
+    const[posts,setPosts]=useState([])
+  useEffect(()=>{
+    const url="https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=34737f8e0a3240d19e8f8c94844b5351"
+  fetch(url).then(resp=>resp.json())
+  .then(resp=>setPosts(resp.articles))
+  },[])
+  return (
+    <>
+<div className="mainBox">
+{ 
+  posts.map(post=>
+    <div key={post.publishedAt} className="card">
+    <br />
+    <img className="card-img-top" src={post.urlToImage}alt="News"/>
+    <div className="card-body">
+      <p className="card-title">{post.title}</p>
+      <p className="card-text">{post.description}</p><br/>
+      <p className="card-text"><span id="sourcetext">SOURCE </span>- {post.source.name}</p>
+      <button type="button" className="newsButton"><a href={post.url}>Read More</a></button>
+    </div>
+  </div>
+  )
+  }
+  </div>
+
+</>
+)
+}
+export default ApiData
